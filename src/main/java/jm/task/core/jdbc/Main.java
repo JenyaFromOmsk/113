@@ -5,14 +5,14 @@ import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 public class Main {
 
     public static void main(String[] args) {
-        UserServiceImpl ud = new UserServiceImpl();
-        ud.createUsersTable();
-        ud.saveUser("name1", "lastname1", (byte) 1);
-        ud.saveUser("name2", "lastname2", (byte) 2);
-        ud.saveUser("name3", "lastname3", (byte) 3);
-        ud.saveUser("name4", "lastname4", (byte) 4);
-        ud.getAllUsers();
-        ud.cleanUsersTable();
-        ud.dropUsersTable();
+        UserServiceImpl usi = new UserServiceImpl();
+        usi.createUsersTable();
+        usi.saveUser("name1", "lastname1", (byte) 1);
+        usi.saveUser("name2", "lastname2", (byte) 2);
+        usi.saveUser("name3", "lastname3", (byte) 3);
+        usi.saveUser("name4", "lastname4", (byte) 4);
+        usi.getAllUsers();
+        usi.cleanUsersTable();
+        usi.dropUsersTable();
     }
 }
